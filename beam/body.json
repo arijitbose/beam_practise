@@ -1,0 +1,14 @@
+{
+    "jobName": "My_Batch_Pipeline5",
+    "parameters":{
+        "region":"us-central1",
+        "input_data" : "gs://apache3/data.csv"
+
+
+    },
+    "environment":{
+        "maxWorkers":"10",
+        "zone": "us-central1-f" 
+    }
+}
+

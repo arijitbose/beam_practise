@@ -1,0 +1,1 @@
+python pipeline1.py --input_data gs://apache3/data.csv --project_id rich-sprite-350409 --table_name test3 --dataset_name bigquery_practise2 --runner DataflowRunner --staging_location gs://apache3/staging --temp_location gs://apache3/temp --region europe-west2 --project rich-sprite-350409

@@ -1,0 +1,20 @@
+curl   -X POST  \
+   'https://dataflow.googleapis.com/v1b3/projects/rich-sprite-350409/templates:launch?gcsPath=gs://apache3/templates/classic'  \
+   -H 'Authorization: Bearer '$(gcloud auth application-default print-access-token) \
+   -H 'Content-Type: application/json' \
+   --data '{
+    "jobName": "scheduled_job5",
+    "parameters": {
+       "input_data" : "gs://apache3/data.csv"
+      
+    },
+    "environment": { "zone": "us-central1-f" }
+    
+   }'
+
+
+   gcloud projects add-iam-policy-binding rich-sprite-350409 --member serviceAccount:'beampractise@rich-sprite-350409.iam.gserviceaccount.com' --role='roles/cloudscheduler.serviceAgent'
+
+   gcloud auth application-default login 
+
+   https://dataflow.googleapis.com/v1b3/projects/rich-sprite-350409/locations/us-central1/templates:launch?gcsPath=gs://apache3/templates/classic

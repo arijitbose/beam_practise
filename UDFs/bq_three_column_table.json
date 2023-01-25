@@ -1,0 +1,16 @@
+{
+    "BigQuery Schema": [
+      {
+        "name": "col1",
+        "type": "STRING"
+      },
+      {
+        "name": "col2",
+        "type": "STRING"
+      },
+      {
+        "name": "col3",
+        "type": "INT64"
+      }
+    ]
+  }

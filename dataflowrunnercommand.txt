@@ -1,0 +1,1 @@
+python pipeline.py --input gs://apache3/data.csv --output gs://apache3/output --runner DataflowRunner --project rich-sprite-350409 --staging_location gs://apache3/staging --temp_location gs://apache3/temp --region europe-west2 --save_main_session

@@ -1,0 +1,1 @@
+gcloud dataflow jobs run my_batch12 --gcs-location gs://apache3/templates/classic --parameters input_data=gs://apache3/data.csv

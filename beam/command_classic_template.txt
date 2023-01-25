@@ -1,0 +1,1 @@
+python -m pipeline1 --runner DataflowRunner --project rich-sprite-350409 --staging_location gs://apache3/staging --temp_location gs://apache3/temp --template_location gs://apache3/templates/classic --region europe-west2 project_id rich-sprite-350409 --dataset_name bigquery_practise2 --table_name test3 --noauth_local_webserver
